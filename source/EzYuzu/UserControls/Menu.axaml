@@ -1,0 +1,34 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d"
+			 d:DesignWidth="800"
+			 d:DesignHeight="450"
+			 x:Class="EzYuzu.UserControls.Menu">
+	<Menu>
+		<MenuItem Header="File">
+			<MenuItem Header="Exit"/>
+		</MenuItem>
+		<MenuItem Header="Options">
+			<MenuItem Header="General">
+				<MenuItem Header="Udpate Yuzu">
+					<MenuItem Header="Launch Yuzu after update" />
+					<MenuItem Header="Reinstall Visual C++" />
+					<MenuItem Header="Exit after update" />
+					<MenuItem Header="Auto-update on EzYuzu start" />
+				</MenuItem>
+			</MenuItem>
+			<MenuItem Header="Advanced">
+				<MenuItem Header="Override Update Channel" />
+				<MenuItem Header="Override Update Version" />
+			</MenuItem>
+		</MenuItem>
+
+		<MenuItem Header="Help">
+			<MenuItem Header="Yuzu Website" />
+			<Separator/>
+			<MenuItem Header="About" />
+		</MenuItem>
+	</Menu>
+</UserControl>
